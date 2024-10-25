@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* Importing a romantic font */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(''),
+        url('https://wallpapercave.com/wp/wp12782101.jpg');
+    background-size: 100px 100px, cover;
+    position: relative;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* Using the romantic font */
+    color: #4b0082;
+    /* Dark violet text for a romantic feel */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Slightly transparent white background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Soft shadow */
+    border: 2px solid #ff6f61;
+    /* Border to highlight the container */
+    z-index: 1;
+    /* Ensure container is on top */
+}
+
+h1 {
+    font-size: 3em;
+    /* Increased font size for the title */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px white;
+    /* Soft text shadow */
+}
+
+button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    /* Slightly larger font for buttons */
+    cursor: pointer;
+    border: none;
+    /* Remove default border */
+    border-radius: 25px;
+    /* Rounded corners for buttons */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+#yesBtn {
+    background-color: #28a745;
+    /* Green for YES */
+    color: white;
+    /* White text */
+}
+
+#yesBtn:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+    transform: scale(1.05);
+    /* Slight scale effect on hover */
+}
+
+#noBtn {
+    background-color: #dc3545;
+    /* Red for NO */
+    color: white;
+    /* White text */
+}
+
+#noBtn:hover {
+    background-color: #c82333;
+    /* Darker red on hover */
+    transform: scale(1.05);
+    /* Slight scale effect on hover */
+}
+
+.congrats-message {
+    text-shadow: 2px 2px 3px white;
+    margin-top: 20px;
+    font-size: 1.7em;
+    color: #4b0082;
+    /* Dark violet text for consistency */
+    display: none;
+    /* Hidden by default */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.congrats-message p {
+    text-shadow: 2px 2px 3px white;
+    font-size: 1.5em;
+    color: #4b0082;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+        /* Decrease font size for mobile */
+        margin-bottom: 15px;
+        /* Adjust margin */
+    }
+
+    .container {
+        padding: 20px;
+        /* Decrease padding */
+    }
+
+    button {
+        padding: 10px 20px;
+        /* Decrease button padding */
+        font-size: 18px;
+        /* Decrease button font size */
+    }
+
+    .congrats-message {
+        font-size: 1.5em;
+        /* Decrease congratulations message size */
+    }
+}
